@@ -1,0 +1,2 @@
+let clave = ""; 
+let encriptado= "";
