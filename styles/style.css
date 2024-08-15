@@ -1,3 +1,31 @@
 body{
     background-color: #e5e5e5;
+    box-sizing: border-box;
+    color:darkblue;
+    justify-content: space-between;
+}
+.presentacion{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap:82px;
+
+}
+.presentacion__contenido{
+    display:flex;
+    flex-direction:column;
+    justify-content:  space-between;
+    gap: 82px;
+    
+}
+.presentacion__botones{
+    display:flex;
+    flex-direction: column;
+    align-content: flex-end;
+}
+.advertencia{
+    margin:0%
+
+    
+
 }

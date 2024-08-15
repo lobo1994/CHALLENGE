@@ -1,7 +1,7 @@
 let clave = ""; 
 let encriptado= "";
 function asignarTextoElemento(elemento, texto){
-    let advertencia = document.querySelector(elemento);
+    let advertencia = document.querySelector("."+elemento);
     advertencia.innerHTML = texto;
 }
 
@@ -50,4 +50,4 @@ function desencriptarPalabras(){
 }
 
 
-asignarTextoElemento("h3", "solo letras minusculas sin acentos");
+asignarTextoElemento("advertencia", "solo letras minusculas sin acentos");

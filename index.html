@@ -7,21 +7,30 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <section>
-          <input class="fraseUsuario" type="text" id="entradaTexto" name="entrada_texto" 
-          placeholder=" ingrese el texto aqui "
-          />
-          <button onclick="encriptarPalabras();" class= "boton_contenedor"id="encriptar">Encriptar </button>
-          <button onclick="desencriptarPalabras();" class= "boton_contenedor"id="encriptar">desencriptar </button>
-    </section>
+    <main class="presentacion">
+        <section class="presentacion__contenido">
+            <div>
+                <input class="fraseUsuario" type="text" id="entradaTexto" name="entrada_texto" 
+                placeholder=" ingrese el texto aqui "
+                />
+
+            </div>
+            <section class="presentacion__botones">
+                <p class="advertencia"></p>
+                <button onclick="encriptarPalabras();" class= "boton_encriptador"id="encriptar">Encriptar </button>
+                <button onclick="desencriptarPalabras();" class= "boton_desencriptador"id="encriptar">desencriptar </button>
+            </section>
+        </section>
+            
+        <section>
+            
+            <p>hola mundo</p> 
+            <button > copiar </button>
+        </section>
         
-    <section>
-        <p>hola mundo</p> 
-        <button > copiar </button>
-    </section>
-    <h3></h3>
+    </main>
     <footer>
-        Development by: Daniel Muñoz
+        <p>Development by: Daniel Muñoz</p>
         <p>
             13 de agosto de 2024
         </p>
