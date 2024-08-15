@@ -2,6 +2,7 @@
 <html lang="es-mx">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
     <link rel="stylesheet" href="./styles/style.css">
@@ -10,15 +11,23 @@
     <main class="presentacion">
         <section class="presentacion__contenido">
             <div>
-                <input class="fraseUsuario" type="text" id="entradaTexto" name="entrada_texto" 
-                placeholder=" ingrese el texto aqui "
+                
+                <input class="fraseUsuario" type="text" id="entradaTexto" name="entrada_texto" placeholder="Ingrese texto aqui"
+                
                 />
 
             </div>
+            
             <section class="presentacion__botones">
-                <p class="advertencia"></p>
-                <button onclick="encriptarPalabras();" class= "boton_encriptador"id="encriptar">Encriptar </button>
-                <button onclick="desencriptarPalabras();" class= "boton_desencriptador"id="encriptar">desencriptar </button>
+                <div class="presentacion__advertencia">
+                    <img class="icono" src="./assets/signo.png">
+                    <p class="advertencia"></p>
+                </div>
+                
+                <div>
+                    <button onclick="encriptarPalabras();" class= "boton__encriptador" id="encriptar">Encriptar </button>
+                    <button onclick="desencriptarPalabras();" class= "boton__desencriptador"id="encriptar">desencriptar </button>
+                </div>
             </section>
         </section>
             
