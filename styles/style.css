@@ -13,30 +13,34 @@ body{
 .presentacion{
     display: flex;
     align-items:center;
-    padding: 6% 15%;
     justify-content: space-between;
-    gap:82px;
+    gap:5rem;
+    margin-top: 2.5rem;
 
 }
 .presentacion__contenido{
     display:flex;
     flex-direction:column;
     justify-content:  space-between;
-    gap: 82px;
+    
     
 }
 .presentacion__botones{
     display:flex;
     flex-direction: column;
-    align-content: flex-end;
-    padding: 0px 10px 10px;
+    padding: 0px 0.625rem 0.625rem;
+    justify-content: center;
 
 }
+.modelo__botones{
+    justify-content: flex-end;
+    margin-left: 15rem;
+}
 .advertencia{
-    padding: 200px 0px 10px;
+    padding: 0px 0px 0.625rem;
     margin:0%;
     font-family: "Inter", sans-serif;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: gray;
 
 
@@ -44,55 +48,107 @@ body{
     
 
 }
-.fraseUsuario{
-    padding: 50px;
-    width: 600px;
-    height: 40px;
+.presentacion__frase__Usuario{
+    display:flex;
+    margin-top: 1rem;
+    margin-left: 15rem;
+    margin-bottom: 35rem;
+    width: 42.5rem;
+    height: 18rem;
     border: 0;
-    background-color: #d5d5d5;
+    background-color: white;
     color: darkblue;
+}
+.fraseUsuario{
+    border: 0;
     font-family: "Inter", sans-serif;
-    font-size: 32px;
-    outline: none;
+    font-size: 2rem;
+    outline:lightgray;
+    width: auto;
+    min-width: 14ch;
+    text-align: center;
 
 }
 input[type="text"]::placeholder {
     font-family: "Inter", sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     color: darkblue; 
 } 
 .icono{
-    padding: 200px 0px 10px;
-    width:10px;
-    height: 10px;
+    padding: 0% 0px 0.625rem;
+    width:0.625rem;
+    height: 0.625rem;
 
 }
 .presentacion__advertencia{
     display:flex;
     align-items: center;
     flex-direction: row;
+    margin-left: 15rem;
 }
 .boton__encriptador{
-    width: 328px;
-    height: 67px;
+    width: 20.5rem;
+    height: 4.18rem;
     background-color: darkblue;
-    border-radius: 24px;
-    border:0px;
+    border-radius: 1.5rem;
+    border-color:black;
     outline: none;
     font-family: "Inter", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     color: white;
 
 }
 .boton__desencriptador{
-    width: 328px;
-    height: 67px;
+    width: 20.5rem;
+    height: 4.2rem;
     background-color: #d8dfe8;
-    border-radius: 24px;
+    border-radius: 1.5rem;
     border-color: darkblue;
     outline: none;
     font-family: "Inter", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     color: darkblue;
+
+}
+.presentacion__resultado{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 25rem;
+    height: 59rem; 
+    margin-right: 2.0rem;
+
+   
+}
+.imagen{
+    margin-top: 15rem;
+    width: 100%;
+    height: 40%;
+}
+.mensaje1{
+    margin: 0.5rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.alineacion__mensaje{
+    text-align: center;
+}
+.mensaje2{
+    margin: 0.5rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+.mostrar__resultado{
+    background-color: white;
+    width: 25rem;
+    height: 59rem; 
+    margin-right: 2.0rem;
+}
+.resultado{
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
 
 }

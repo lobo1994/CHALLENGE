@@ -10,10 +10,9 @@
 <body>
     <main class="presentacion">
         <section class="presentacion__contenido">
-            <div>
-                
-                <input class="fraseUsuario" type="text" id="entradaTexto" name="entrada_texto" placeholder="Ingrese texto aqui"
-                
+            <div class="presentacion__frase__Usuario">
+                    
+                <input class="fraseUsuario" type="text" id="entradaTexto" name="entrada_texto" placeholder="Ingrese texto aqui" oninput="ajustarInput(this)"
                 />
 
             </div>
@@ -24,18 +23,28 @@
                     <p class="advertencia"></p>
                 </div>
                 
-                <div>
+                <div class="modelo__botones" >
                     <button onclick="encriptarPalabras();" class= "boton__encriptador" id="encriptar">Encriptar </button>
-                    <button onclick="desencriptarPalabras();" class= "boton__desencriptador"id="encriptar">desencriptar </button>
+                    <button onclick="desencriptarPalabras();" class= "boton__desencriptador"id="encriptar">Desencriptar </button>
                 </div>
             </section>
         </section>
             
-        <section>
-            
-            <p>hola mundo</p> 
-            <button > copiar </button>
-        </section>
+        <div class="presentacion__resultado" id="antesDeClic">
+            <img class="imagen" src="./assets/1.png"> 
+            <p class="alineacion__mensaje">
+                <strong class="mensaje1"> </strong>
+            </p> 
+            <p class="mensaje2">
+
+            </p>       
+        </div>
+        <div class="mostrar__resultado" id="despuesDeClic">
+            <p class="resultado">
+
+            </p>
+            <button> copiar</button>
+        </div>
         
     </main>
     <footer>

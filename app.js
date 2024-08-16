@@ -1,5 +1,7 @@
 let clave = ""; 
 let encriptado= "";
+let mostrar= document.getElementById("despuesDeClic");
+    mostrar.style.display= "none";
 function asignarTextoElemento(elemento, texto){
     let advertencia = document.querySelector("."+elemento);
     advertencia.innerHTML = texto;
@@ -22,8 +24,12 @@ function encriptarPalabras(){
                 return "ufat";
         }
             
-        })
-    ;
+        });
+    let ocultar = document.getElementById("antesDeClic");
+        ocultar.style.display="none";
+        asignarTextoElemento("resultado", nuevaFrase);
+        mostrar.style.display="block";
+
 
     console.log(nuevaFrase);
 
@@ -46,8 +52,14 @@ function desencriptarPalabras(){
 
         }
     });
+    asignarTextoElemento("resultado", nuevaFrase);
+    mostrar.style.display="block";
     console.log(nuevaFrase);
 }
 
-
+function ajustarInput(elemento) {
+    elemento.style.width = (elemento.value.length + 1) + 'ch';
+}
 asignarTextoElemento("advertencia", "solo letras minusculas sin acentos");
+asignarTextoElemento("mensaje1", "Ningun mensaje fue encontrado");
+asignarTextoElemento("mensaje2", "Ingresa el texto que deseas encriptar o desencriptar");
