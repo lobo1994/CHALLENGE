@@ -225,10 +225,11 @@ footer{
         margin-left:16rem;
     }
     .mostrar__resultado{
-        width: 700px;
+        width: 600px;
         margin-left:16rem;
 
     }
+
 
 }
 @media(max-width: 375px){
