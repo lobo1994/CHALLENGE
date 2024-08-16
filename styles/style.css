@@ -10,6 +10,12 @@ body{
     color:darkblue;
     
 }
+.logo{
+    margin-left: 13rem;
+    width:2rem;
+    height:2rem;
+
+}
 .presentacion{
     display: flex;
     align-items:center;
@@ -144,6 +150,7 @@ textarea[type="text"]::placeholder {
 }
 .mostrar__resultado{
     display: flex;
+    border-radius: 1.5rem;
     background-color: white;
     width: 25rem;
     height: 59rem; 
@@ -207,4 +214,43 @@ footer{
 }
 .presentacion__enlaces__link:hover{
     color: #136F63
+}
+@media(max-width: 768px){
+    .presentacion{
+        flex-direction: column;
+    }
+    .imagen{
+        display: none;
+    }
+    .presentacion__resultado{
+        width: 700px;
+        margin-left:16rem;
+    }
+    .mostrar__resultado{
+        width: 700px;
+        margin-left:16rem;
+
+    }
+
+}
+@media(max-width: 375px){
+    .presentacion{
+        flex-direction: column;
+    }
+    .imagen{
+        display: none;
+    }
+    .modelo__botones{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .presentacion__resultado{
+        width: 320px;
+        margin-left:16rem;
+    }
+    .mostrar__resultado{
+        width: 320x;
+        margin-left:16rem;
+
+    }
 }
