@@ -113,6 +113,7 @@ textarea[type="text"]::placeholder {
 }
 .presentacion__resultado{
     display: flex;
+    border-radius: 1.5rem;
     flex-direction: column;
     background-color: white;
     width: 25rem;
@@ -171,4 +172,39 @@ textarea[type="text"]::placeholder {
     margin-bottom: 1rem;
     margin-top: 15rem;
     align-self: last baseline;
+}
+footer{
+    background-color: #38AECC;
+    display:flex;
+    align-items: center;
+    justify-content:  space-evenly;
+    
+}
+.mensaje__footer1{
+    color:#136F63;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+}
+.mensaje__footer2{
+    color:#136F63;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+}
+.presentacion__enlaces__link{
+    width: 50%;
+    text-align: center; 
+    padding: 21.5px 0;
+    border-radius:8px;
+    font-family: var(--fuente-montserrat);
+    font-size:1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-secundario);
+    border: 2px solid var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+.presentacion__enlaces__link:hover{
+    color: #136F63
 }
