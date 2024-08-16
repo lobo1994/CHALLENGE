@@ -31,29 +31,6 @@ body{
     
     
 }
-.presentacion__botones{
-    display:flex;
-    flex-direction: column;
-    padding: 0px 0.625rem 0.625rem;
-    justify-content: center;
-
-}
-.modelo__botones{
-    justify-content: flex-end;
-    margin-left: 15rem;
-}
-.advertencia{
-    padding: 0px 0px 0.625rem;
-    margin:0%;
-    font-family: "Inter", sans-serif;
-    font-size: 0.75rem;
-    color: gray;
-
-
-
-    
-
-}
 .presentacion__frase__Usuario{
     display:flex;
     margin-top: 1rem;
@@ -81,16 +58,36 @@ textarea[type="text"]::placeholder {
     font-size: 2rem;
     color: darkblue; 
 } 
-.icono{
-    padding: 0% 0px 0.625rem;
-    width:0.625rem;
-    height: 0.625rem;
+
+.presentacion__botones{
+    display:flex;
+    flex-direction: column;
+    padding: 0px 0.625rem 0.625rem;
+    justify-content: center;
 
 }
 .presentacion__advertencia{
     display:flex;
     align-items: center;
     flex-direction: row;
+    margin-left: 15rem;
+}
+.icono{
+    padding: 0% 0px 0.625rem;
+    width:0.625rem;
+    height: 0.625rem;
+
+}
+.advertencia{
+    padding: 0px 0px 0.625rem;
+    margin:0%;
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    color: gray;
+}
+
+.modelo__botones{
+    justify-content: flex-end;
     margin-left: 15rem;
 }
 .boton__encriptador{
@@ -133,15 +130,16 @@ textarea[type="text"]::placeholder {
     width: 100%;
     height: 40%;
 }
+.alineacion__mensaje{
+    text-align: center;
+}
 .mensaje1{
     margin: 0.5rem;
     font-family: "Inter", sans-serif;
     font-size: 1.5rem;
     text-align: center;
 }
-.alineacion__mensaje{
-    text-align: center;
-}
+
 .mensaje2{
     margin: 0.5rem;
     font-family: "Inter", sans-serif;
@@ -236,20 +234,39 @@ footer{
 @media(max-width: 375px){
     .presentacion{
         flex-direction: column;
+        max-width: 370px;
+        width: 370px;
+    }
+    .presentacion__contenido{
+        display: flex;
+        width: 370px;
+    }
+    .presentacion__frase__Usuario{
+        width: 370px;
     }
     .imagen{
         display: none;
     }
     .modelo__botones{
-        justify-content: center;
+        
+        display: flex;
         flex-direction: column;
+    }
+    .boton__encriptador{
+        width: 370px;
+    }
+    .boton__desencriptador{
+        width: 370px;
+    }
+    .presentacion__advertencia{
+        width: 370px;
     }
     .presentacion__resultado{
         width: 320px;
         margin-left:16rem;
     }
     .mostrar__resultado{
-        width: 320x;
+        width: 320px;
         margin-left:16rem;
 
     }
