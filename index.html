@@ -12,9 +12,7 @@
         <section class="presentacion__contenido">
             <div class="presentacion__frase__Usuario">
                     
-                <input class="fraseUsuario" type="text" id="entradaTexto" name="entrada_texto" placeholder="Ingrese texto aqui" oninput="ajustarInput(this)"
-                />
-
+                <textarea class="fraseUsuario" type="text" placeholder="Ingrese texto aqui" id="entradaTexto"  rows= "6" cols= "50"  ></textarea>
             </div>
             
             <section class="presentacion__botones">
@@ -40,10 +38,10 @@
             </p>       
         </div>
         <div class="mostrar__resultado" id="despuesDeClic">
-            <p class="resultado">
+            <p class="resultado" id="textoCopiar">
 
             </p>
-            <button> copiar</button>
+            <button class="boton__copiar" onclick="copiarTexto()"> copiar</button>
         </div>
         
     </main>

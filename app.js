@@ -56,10 +56,26 @@ function desencriptarPalabras(){
     mostrar.style.display="block";
     console.log(nuevaFrase);
 }
-
-function ajustarInput(elemento) {
-    elemento.style.width = (elemento.value.length + 1) + 'ch';
+function copiarTexto(){
+    var elementoCopiado = document.getElementById("textoCopiar");
+    var textoCopiado=document.createElement("input");
+    document.body.appendChild(textoCopiado);
+    textoCopiado.value = elementoCopiado.textContent;
+    console.log(textoCopiado);
+    textoCopiado.select();
+    textoCopiado.setSelectionRange(0,99999);
+    document.execCommand('copy');
+    pegartexto(textoCopiado.value);
+    document.body.removeChild(textoCopiado);
+    
 }
+function pegartexto(copia){
+    var textoPegar = document.getElementById("entradaTexto");
+    textoPegar.value=copia;
+
+}
+
+
 asignarTextoElemento("advertencia", "solo letras minusculas sin acentos");
 asignarTextoElemento("mensaje1", "Ningun mensaje fue encontrado");
 asignarTextoElemento("mensaje2", "Ingresa el texto que deseas encriptar o desencriptar");

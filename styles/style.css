@@ -56,20 +56,21 @@ body{
     width: 42.5rem;
     height: 18rem;
     border: 0;
-    background-color: white;
+    background-color: #e5e5e5;
     color: darkblue;
 }
 .fraseUsuario{
     border: 0;
+    margin: 1rem;
+    outline: none;
     font-family: "Inter", sans-serif;
     font-size: 2rem;
-    outline:lightgray;
-    width: auto;
-    min-width: 14ch;
-    text-align: center;
+    background-color: #e5e5e5;
+    color:darkblue;
+    
 
 }
-input[type="text"]::placeholder {
+textarea[type="text"]::placeholder {
     font-family: "Inter", sans-serif;
     font-size: 2rem;
     color: darkblue; 
@@ -141,14 +142,33 @@ input[type="text"]::placeholder {
     text-align: center;
 }
 .mostrar__resultado{
+    display: flex;
     background-color: white;
     width: 25rem;
     height: 59rem; 
     margin-right: 2.0rem;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 .resultado{
+    width: 20rem;
     font-family: "Inter", sans-serif;
     font-size: 1.5rem;
-    text-align: center;
+    text-align: justify;
+    overflow-wrap: break-word;
 
+}
+.boton__copiar{
+    width: 20.5rem;
+    height: 4.2rem;
+    background-color: #d8dfe8;
+    border-radius: 1.5rem;
+    border-color: darkblue;
+    outline: none;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    color: darkblue;
+    margin-bottom: 1rem;
+    margin-top: 15rem;
+    align-self: last baseline;
 }
